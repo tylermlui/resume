@@ -1,0 +1,221 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tyler Lui} \\ \vspace{1pt}
+    \small Camarillo, CA $|$
+    \small (805)-418-0314 $|$ \href{mailto:tylerlui@gmail.com}{\underline{tylerlui@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/tyler-lui-82779721b/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/tylermlui}{\underline{Github}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cal State Fullerton }{Fullerton, CA}
+      {Bachelor of Science in Computer Science}{Aug. 2023 -- Present}
+     
+     \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Fellow }{July 2024 -- Present}
+      { HeadStarter }{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed 5+ AI Apps utilizing Next.JS, OpenAI, Pinecone, Stripe API with 98\% accuracy as seen by 1000 users}
+        \resumeItem{Developed projects from design to deployment alongside 4+ engineering fellows using MVC patterns}
+        \resumeItem{ Coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Reddit Video Maker Bot} $|$ \emph{ Python }}{May 2023 }
+        \resumeItemListStart
+        \resumeItem{Contributed to the integration of a text-to-speech API in an open-source project that created short form videos from Reddit content}
+        \resumeItem{Tailored the bot using this integration that its videos generated over \$12,000 in revenue from TikTok}
+        \resumeItem{Achieved significant engagement on TikTok and Instagram, amassing over 40 million views, 47,000 followers, and 4.3 million likes}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{C\&C Jewelry} $|$ \emph{OpenAI Vision, Flask, React.js, Typescript, BackBlaze, Supabase}}{June 2024}
+        \resumeItemListStart
+          \resumeItem{Built an e-commerce website utilizing OpenAI's vision model, reducing product data entry time by 30\%}
+          \resumeItem{Displayed products to users with dynamically updated information, increasing user engagement by 40\%}
+          \resumeItem{Integrated real-time gold price tracking, improving pricing accuracy}
+        \resumeItem{Implemented CRUD operations with a Supabase database, streamlining product management}
+          \resumeItem{Enhanced productivity for the business owners by reducing manual data entry and optimizing pricing}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Clear Cosmetics $|$ MLH} $|$ \emph{Next.js, Flask, Chroma, OpenAI API, TypeScript}}{August 2024}
+        \resumeItemListStart
+          \resumeItem{Developed an AI-driven application using OpenAI's GPT-3.5 to provide consumers with transparent insights into cosmetic products}
+          \resumeItem{Built a responsive full-stack solution, offering a user-friendly interface for informed purchasing decisions}
+          \resumeItem{Implemented a successful RAG (Retrieval-Augmented Generation) system, to ensure accurate product information}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Activities}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Association for Computer Machinery (ACM)}{September 2023 -- Present}
+  {Open Source Systems Officer}{Fullerton, CA}
+  \resumeItemListStart
+    \resumeItem{Led a project overseeing 6 student developers, guiding their contributions to various projects}
+    \resumeItem{Coordinated team efforts using front-end techniques and the Svelte framework to enhance user experience}
+    \resumeItem{Conducted progress meetings to assign tasks, review project milestones, and ensure successful project completion}
+\resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, JavaScript, HTML/CSS, Swift } \\
+     \textbf{Frameworks}{: Flask, React.js, Node.js, Django, Vue.js, SvelteKit } \\
+     \textbf{Databases}{: Sqlite, Postgres, MongoDB, Pinecone, Chroma} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, BeautifulSoup4} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
